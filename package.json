@@ -1,0 +1,19 @@
+{
+  "name": "moc-formation-materials-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jennie Chamberlin <chamberlin.jennie@gmail.com> (http://www.jenniechamberlin.com)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.5.3"
+  }
+}
