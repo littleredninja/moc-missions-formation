@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "author": "Jennie Chamberlin <chamberlin.jennie@gmail.com> (http://www.jenniechamberlin.com)",
   "license": "ISC",
