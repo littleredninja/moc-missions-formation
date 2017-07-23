@@ -7,15 +7,16 @@ const app = express()
 app.use(express.static(path.join(__dirname, 'client/build')))
 
 // Put all API endpoints under '/api'
-app.get('/page', function(req, res) {
-  const page = {
-    hey: 'hi',
-  }
-  res.json(page)
+app.get('/api/page', (req, res) => {
+  res.json('hey world')
   console.log('returning page')
 })
 
-const port = process.env.PORT || 3000
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'))
+})
+
+const port = process.env.PORT || 5000
 
 app.listen(port, function() {
   console.log(`Listening on port ${port}`)
